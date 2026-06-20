@@ -1,4 +1,5 @@
 # Introduction {#sec-introduction label="Introduction"}
+
 ばーか。
 All human beings are born free and equal in dignity and rights. All human beings are born free and equal in dignity and rights. All human beings are born free and equal in dignity and rights. All human beings are born free and equal in dignity and rights.
 
