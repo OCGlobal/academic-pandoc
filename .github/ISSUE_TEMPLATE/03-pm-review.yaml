@@ -1,0 +1,28 @@
+name: "🔍 PM Review Request"
+description: "Submit a section for final project manager (PM) approval after fixes."
+title: "[PM Review] "
+labels: ["status: pm-review"]
+body:
+  - type: input
+    id: related-pr
+    attributes:
+      label: "Related Pull Request (URL or #Number)"
+      placeholder: "e.g., #42 or https://github.com/.../pull/42"
+    validations:
+      required: true
+  - type: textarea
+    id: change-summary
+    attributes:
+      label: "Summary of Changes Made"
+      placeholder: "Briefly explain how the previous issues/RFP requirements were addressed."
+    validations:
+      required: true
+  - type: dropdown
+    id: review-type
+    attributes:
+      label: "Review Urgency"
+      options:
+        - "Routine (Final check before merging)"
+        - "Urgent (Blocking other tasks)"
+    validations:
+      required: true

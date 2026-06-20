@@ -1,0 +1,24 @@
+name: "🔧 Revision Request"
+description: "Request specific edits or corrections to existing text."
+title: "[Revision] "
+labels: ["status: revision"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: "File and Line/Section Number"
+      placeholder: "e.g., thesis/02_method.md (Section 2.3)"
+    validations:
+      required: true
+  - type: textarea
+    id: issue-details
+    attributes:
+      label: "Description of the Issue"
+      placeholder: "Explain what needs to be changed (e.g., logical error, typo, or feedback from peer review)."
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: "Suggested Modification"
+      placeholder: "Provide the expected text or direction for the fix."

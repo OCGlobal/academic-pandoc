@@ -1,0 +1,24 @@
+name: "📝 New Drafting Request"
+description: "Request a team member to draft a new section or chapter."
+title: "[Draft] "
+labels: ["status: drafting"]
+body:
+  - type: input
+    id: target-file
+    attributes:
+      label: "Target File / Chapter"
+      placeholder: "e.g., thesis/01_introduction.md"
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: "RFP Requirements & Objectives"
+      placeholder: "Specify which RFP section this draft should cover and the main goals."
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: "Due Date"
+      placeholder: "YYYY-MM-DD"

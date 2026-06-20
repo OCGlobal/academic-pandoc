@@ -1,0 +1,22 @@
+name: "📊 Data & Visuals Update"
+description: "Request updates for figures, tables, data sources, or references."
+title: "[Data/Visuals] "
+labels: ["status: data-update"]
+body:
+  - type: dropdown
+    id: asset-type
+    attributes:
+      label: "Asset Type"
+      options:
+        - "Figure / Image"
+        - "Table / Dataset"
+        - "Bibliography / References (.bib)"
+    validations:
+      required: true
+  - type: textarea
+    id: update-details
+    attributes:
+      label: "Details of the Update"
+      placeholder: "Describe the required changes (e.g., Update the workflow diagram, add missing citation details)."
+    validations:
+      required: true
